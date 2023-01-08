@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import Login from './screens/Login';
-import {Routes, Route, Redi }from "react-router-dom";
+import {Routes, Route }from "react-router-dom";
 import Register from './screens/Register';
 import Home from './screens/Home';
 import { AuthProvider } from './contexts/AuthContext';
