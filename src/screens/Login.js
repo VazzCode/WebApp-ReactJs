@@ -74,7 +74,8 @@ export default function Login() {
   
   
   return (
-    <div>      
+    <div style={{margin: 100}}>
+          
         <form>
           <h3>Log In</h3>
            <div style= {{ display:'flex',alignItems:'center',flexDirection:"column", height:220,width:300, justifyContent:'space-between'}}>
@@ -118,7 +119,7 @@ export default function Login() {
             <Button variant='contained' disabled={loading} onClick={handleSubmit}>Log In</Button>
           </div>
         </form>
-        <p>If you don't have an account <Link component="button" fontSize={12.5} onClick={()=>{navigate("/Register")}}>Click here to Register</Link></p>      
+        <p>If you don't have an account <Link component="button" fontSize={12.5} onClick={()=>{navigate("/Register")}}>Click here to Register</Link></p>   
     </div>
   )
 }

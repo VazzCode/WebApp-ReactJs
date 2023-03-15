@@ -73,7 +73,7 @@ export default function ForgotPassword() {
   
   
   return (
-    <div>
+    <div style={{margin: 100}}>
         <form>
           <h3>Password Reset</h3>
           <p>{checkM && checkM}</p>

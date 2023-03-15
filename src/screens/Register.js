@@ -82,12 +82,12 @@ export default function Register() {
     }
 
   return (
-    <div>
+    <div style={{margin: 100}}>
         <form >
           <h3>Register</h3>
             {/* <div style={{}}>{errorMessage}</div> */}
            <div style= {{ display:'flex',alignItems:'center',flexDirection:"column", height:500,width:300, justifyContent:'space-between'}}>
-            {currentUser && currentUser.email}
+            {/* {currentUser && currentUser.email} */}
             <TextField 
             fullWidth
             type='email'
@@ -160,7 +160,7 @@ export default function Register() {
                     onClick={() => setShowPassword((show) => !show)}
                     onMouseDown={(e)=>{e.preventDefault()}}
                     edge="end"
-                  >
+                    >
                     {showPassword ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
                 </InputAdornment>
